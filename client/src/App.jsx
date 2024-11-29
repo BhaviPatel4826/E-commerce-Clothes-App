@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import Footer from "./components/Footer/Footer";
-import Product from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 const Layout = () => {
   return (
@@ -42,10 +42,13 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  return
-    <div>
-      Hello
-    </div>;
+  return(
+    <div className='app'>
+      <Navbar />
+      <Outlet />
+      <Footer/>
+    </div>
+  )
 }
 
 export default App;
